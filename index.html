@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>FlexSelect</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">FlexSelect: Flexible Token Selection for Efficient Long Video Understanding</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <p>Yunzhu Zhang</a><sup>*</sup>,</p></span>
+                <span class="author-block">
+                  <p>Yu Lu</a><sup>*</sup>,</p></span>
+                  <span class="author-block">
+                    <p>Tianyi Wang,</p>
+                  </span>
+                  <span class="author-block">
+                    <p>Fengyun Rao,</p>
+                  </span>
+                  <span class="author-block">
+                    <p>Yi Yang,</p>
+                  </span>
+                  <span class="author-block">
+                    <p>Linchao Zhu<sup>†</sup></p>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="eql-cntrb"><small><br><sup>†</sup>Corresponding Author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         
+                  <span class="link-block">
+                    <a href="https://github.com/yunzhuzhang0918/flexselect" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://huggingface.co/yunzhuyunzhu" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Huggingface</span>
+              </a>
+            </span> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Layer Carousel 展示区 -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="layer-carousel" class="carousel layer-carousel">
+        <!-- 动态内容将在这里加载 -->
+      </div>
+      <div class="container is-max-desktop"></div>
+        <p class="has-text-centered" style="max-width: 800px; margin: 0 auto;">Attention Visualization of different layers on LLaVA-Video-7B. Reference Layer can focus on the query related visual regions and we use such score to select query related tokens. The Video Link is <a href="https://www.youtube.com/watch?v=fFjv93ACGo8" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=fFjv93ACGo8.</a> We present three queries:</p>
+    </div>
+    </div>
+  </div>
+</section>
+<div class="question-selector has-text-centered mb-5">
+  <div class="buttons are-medium is-flex is-flex-direction-column is-align-items-center">
+    <!-- 按钮保持原样 -->
+    <button class="button is-normal is-info question-btn" data-question="question1">Question 1: What's the color of the cup appeared in this video?</button>
+    <button class="button is-normal question-btn" data-question="question2">Question 2: How many apples are on the Christmas tree in the video?</button>
+    <button class="button is-normal question-btn" data-question="question3">Question 3: How many socks are hanging above the fireplace next to the Christmas tree in the video?</button>
+  </div>
+</div>
+<!-- Paper abstract -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            <p>We propose <strong>FlexSelect</strong>, a flexible and efficient token selection strategy for processing long videos. FlexSelect identifies and retains the most semantically relevant content by leveraging cross-modal attention patterns from a reference transformer layer. It comprises two key components: (1) <strong>a training-free token ranking pipeline</strong> that leverages faithful cross-modal attention weights to estimate each video token's importance, and (2) <strong>a rank-supervised lightweight selector</strong> that is trained to replicate these rankings and filter redundant tokens.</p>
+            
+            <p><strong>FlexSelect</strong> can be seamlessly integrated into various VideoLLM architectures, such as <strong>LLaVA-Video</strong>, <strong>InternVL</strong> and <strong>Qwen-VL</strong>, serving as a plug-and-play module to extend their temporal context length. Empirically, FlexSelect delivers strong gains across multiple long-video benchmarks – including <strong>VideoMME</strong>, <strong>MLVU</strong>, <strong>LongVB</strong>, and <strong>LVBench</strong>. Morever, it achieves significant speed-ups (<em>e.g.,</em> up to 9× on LLaVA-Video-7B model), highlighting FlexSelect's promise for efficient long-form video understanding.</p> 
+          </p>
+        </div>
+        <figure style="margin: 2rem auto; max-width: 100%;">
+          <img src="./static/images/abs.jpg" alt="FlexSelect architecture overview" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+          <figcaption class="has-text-justified" style="margin-top: 1rem; font-size: 0.9rem; line-height: 1.5;">
+            <p style="margin-bottom: 0.8rem;">Figure 1: <strong>(left)</strong> Visualization of cross-modal attention maps of LLaVA-Video-7B across layers (user query: <span style="font-style: italic;">"what's the color of the cup?"</span>). Attention scores progressively highlight the query-related regions (the cup) with layer depth, and this highlighting is most pronounced at the specific <strong>reference layer</strong> (layer 19 in example). FlexSelect employs attention scores from this layer to select semantically related visual tokens. <strong>(right)</strong> VideoMME accuracy and response time (time to generate the first token) of LLaVA-Video-7B. The original model with 64 input frames achieves limited accuracy 64.4% due to inadequate coverage for long video content, while increasing frames will overload the model's context window, reducing accuracy to 58.5% and slowing response time to 38.2s. FlexSelect improves this by filtering irrelevant tokens, achieving 68.9% accuracy at 512 frames with 9× faster response (4.2s).</p>
+          </figcaption>
+        </figure>
+        <figure style="margin: 2rem auto; max-width: 150%;">
+          <img src="./static/images/arch.jpg" alt="FlexSelect architecture overview" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+          <figcaption class="has-text-justified" style="margin-top: 1rem; font-size: 0.9rem; line-height: 1.5;">
+            <p style="margin-bottom: 0.8rem;">Figure 2: <strong>FlexSelect Pipeline</strong>. Given a long video and a query, FlexSelect first partitions the video into frame sets and encodes each into visual tokens. For each set, a token selector identifies semantically relevant tokens by ranking cross-modal attention scores from a reference layer in a pre-trained VideoLLM or a lightweight selector network trained to approximate it. In this process, the <span style="font-family: 'Times New Roman', serif;">projector<sub>s</sub></span> and <span style="font-family: 'Times New Roman', serif;">text embedding<sub>s</sub></span> are employed to convert the visual tokens and user queries into tokens that match the dimension of subsequent transformer layers. After getting the scores, the top-ranked tokens across all segments are aggregated and projected into the decoder for final reasoning. FlexSelect operates in a training-free or rank-supervised mode, and serves as a plug-and-play module that enables efficient long-video understanding without requiring modifications to the base VideoLLM.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Rank-Supervised Training</h2>
+        <div class="content has-text-justified">
+          <p>
+            While the training-free approach described above effectively reduces computational overhead, it still relies on partial forward passes through the large VideoLLM to score visual tokens. To further enhance inference efficiency, we introduce a <em>lightweight token selector</em> trained via rank supervision to predict semantic relevance scores independently. The selector model is explicitly designed to replicate the token-ranking behavior observed at the reference transformer layer <span style="font-family: 'Times New Roman', serif;">L<sub>ref</sub></span>.
+          </p>
+        </div>
+        
+        <!-- Image and caption side-by-side layout -->
+        <div class="columns is-vcentered" style="margin: 2rem 0;">
+          <!-- Image column (left) -->
+          <div class="column is-half" style="padding-right: 1.5rem;">
+            <figure style="margin: 0;">
+              <img src="./static/images/train.jpg" alt="FlexSelect architecture overview" style="width: 100%; height: auto; display: block;">
+            </figure>
+          </div>
+          
+          <!-- Caption column (right) -->
+          <div class="column is-half" style="padding-left: 1.5rem;">
+            <figcaption class="has-text-justified" style="font-size: 0.9rem; line-height: 1.5; height: 100%; display: flex; align-items: center;">
+              <p style="margin: 0;">
+                Figure 3: <strong>Illustration of rank-supervised training</strong> We align lightweight model's predicted scores 
+                <span class="math-notation">r̂</span> with the reference layer's semantic relevance scores 
+                <span class="math-notation">r<sup>ref</sup></span> by optimizing the Spearman rank correlation 
+                coefficient between them. Once trained, the ranking derived from these two scores will follow 
+                similar order, enabling the lightweight model to rank the visual tokens as the reference layer 
+                does and select the related tokens quickly.
+              </p>
+            </figcaption>
+          </div>
+        </div>
+        <br>
+        <br>
+        <figure style="margin: 2rem auto; max-width: 90%;">
+          <p style="font-size: 23px;"><strong>Our Results</strong></p>
+          <br>
+          <img src="./static/images/performance.jpg" alt="FlexSelect architecture overview" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+        </figure> 
+        <figcaption class="has-text-justified" style="margin-top: 1rem; font-size: 0.9rem; line-height: 1.5;">
+          <p> Table 1: <strong>Main Results.</strong> We denote the FlexSelect integrated with the lightweight token selector as FlexSelect-Lite. We conduct comprehensive evaluation on different long video benchmarks across diverse VideoLLMs. FlexSelect achieves SoTA results on VideoMME (74.4), MLVU (76.6), LongVideoBench (66.9), and LVBench (56.6) while reducing tokens by over 90\% (up to 9× speedup).</p>
+        </figcaption>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <style>
+  .math-notation {
+    font-family: "Times New Roman", Times, serif;
+  }
+</style> -->
+
+<!-- 问题选择按钮 -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
